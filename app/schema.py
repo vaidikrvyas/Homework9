@@ -1,4 +1,4 @@
-from pydantic import BaseModel, HttpUrl, Field, conint
+from pydantic import BaseModel, HttpUrl, Field, conint # type: ignore
 from typing import List, Optional
 
 class QRCodeRequest(BaseModel):

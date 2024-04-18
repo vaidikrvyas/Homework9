@@ -1,7 +1,7 @@
 # Import necessary modules and functions from FastAPI and other standard libraries
-from fastapi import APIRouter, HTTPException, Depends, Response, status
-from fastapi.responses import JSONResponse
-from fastapi.security import OAuth2PasswordBearer
+from fastapi import APIRouter, HTTPException, Depends, Response, status # type: ignore
+from fastapi.responses import JSONResponse # type: ignore
+from fastapi.security import OAuth2PasswordBearer # type: ignore
 from typing import List
 
 # Import classes and functions from our application's modules

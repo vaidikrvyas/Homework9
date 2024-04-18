@@ -1,6 +1,6 @@
 # test_api.py
 import pytest
-from httpx import AsyncClient
+from httpx import AsyncClient # type: ignore
 from app.main import app
 
 pytest.mark.asyncio

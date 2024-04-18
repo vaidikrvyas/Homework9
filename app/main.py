@@ -1,4 +1,4 @@
-from fastapi import FastAPI
+from fastapi import FastAPI # type: ignore
 from app.config import QR_DIRECTORY
 from app.routers import qr_code, oauth  # Ensure these imports match your project structure.
 from app.services.qr_service import create_directory

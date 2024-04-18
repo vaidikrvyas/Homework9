@@ -3,7 +3,7 @@ import os
 import base64
 from typing import List
 from dotenv import load_dotenv
-from jose import jwt
+from jose import jwt # type: ignore
 from datetime import datetime, timedelta
 from app.config import ADMIN_PASSWORD, ADMIN_USER, ALGORITHM, SECRET_KEY
 import validators  # Make sure to install this package
@@ -66,7 +66,7 @@ def encode_url_to_filename(url):
     Encodes a URL into a base64 string safe for filenames, after validating and sanitizing.
     Removes padding to ensure filename compatibility.
     """
-    sanitizd_url = validate_and_sanitize_url(str(url))
+    sanitized_url = validate_and_sanitize_url(str(url))
     if sanitized_url is None:
         raise ValueError("Provided URL is invalid and cannot be encoded.")
     encoded_bytes = base64.urlsafe_b64encode(sanitized_url.encode('utf-8'))
