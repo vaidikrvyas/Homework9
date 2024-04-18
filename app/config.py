@@ -1,3 +1,4 @@
+
 # Load environment variables
 import os
 from pathlib import Path
@@ -32,7 +33,7 @@ SERVER_DOWNLOAD_FOLDER = os.getenv('SERVER_DOWNLOAD_FOLDER', 'downloads')
 SECRET_KEY = os.getenv("SECRET_KEY", "secret-getenvkey")
 
 # ALGORITHM specifies the algorithm used for JWT encoding/decoding.
-ALGORITHM = os.getenv("ALGORITHM", "HS256")
+ALGORITHM = os.getenv("ALGORITHM", "SHA256")
 
 # ACCESS_TOKEN_EXPIRE_MINUTES defines how long (in minutes) an access token remains valid.
 # Defaults to 30 minutes.
